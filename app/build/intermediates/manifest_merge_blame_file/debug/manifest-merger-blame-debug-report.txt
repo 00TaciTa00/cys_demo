@@ -1,0 +1,110 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="org.pytorch.demo.objectdetection"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="28"
+8-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+11-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml:5:5-80
+11-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml:5:22-77
+12    <uses-permission android:name="android.permission.CAMERA" />
+12-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml:6:5-65
+12-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml:6:22-62
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml:7:5-81
+13-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml:7:22-78
+14    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+14-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml:8:5-82
+14-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml:8:22-79
+15
+16    <application
+16-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml:11:5-41:19
+17        android:allowBackup="true"
+17-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml:12:9-35
+18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+18-->[androidx.core:core:1.3.1] C:\Users\이서영\.gradle\caches\transforms-3\9ecc01f51ea2588f3397301cac56a876\transformed\core-1.3.1\AndroidManifest.xml:24:18-86
+19        android:debuggable="true"
+20        android:extractNativeLibs="false"
+21        android:icon="@mipmap/ic_launcher"
+21-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml:13:9-43
+22        android:label="@string/app_name"
+22-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml:14:9-41
+23        android:roundIcon="@mipmap/ic_launcher_round"
+23-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml:15:9-54
+24        android:supportsRtl="true"
+24-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml:16:9-35
+25        android:theme="@style/AppTheme" >
+25-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml:17:9-40
+26        <activity
+26-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml:18:9-26:20
+27            android:name="org.pytorch.demo.objectdetection.MainActivity"
+27-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml:18:19-47
+28            android:configChanges="orientation"
+28-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml:19:13-48
+29            android:exported="true"
+29-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml:21:13-36
+30            android:screenOrientation="portrait" >
+30-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml:20:13-49
+31            <intent-filter>
+31-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml:22:13-25:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml:23:17-69
+32-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml:23:25-66
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml:24:17-77
+34-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml:24:27-74
+35            </intent-filter>
+36        </activity>
+37        <activity
+37-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml:27:9-35:20
+38            android:name="org.pytorch.demo.objectdetection.AbstractCameraXActivity"
+38-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml:27:19-58
+39            android:configChanges="orientation"
+39-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml:28:13-48
+40            android:exported="true"
+40-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml:30:13-36
+41            android:screenOrientation="portrait" >
+41-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml:29:13-49
+42            <intent-filter>
+42-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml:22:13-25:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml:23:17-69
+43-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml:23:25-66
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml:24:17-77
+45-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml:24:27-74
+46            </intent-filter>
+47        </activity>
+48        <activity
+48-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml:36:9-40:20
+49            android:name="org.pytorch.demo.objectdetection.ObjectDetectionActivity"
+49-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml:37:13-52
+50            android:configChanges="orientation"
+50-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml:38:13-48
+51            android:screenOrientation="portrait" >
+51-->C:\SoongSil\4_2\Opensource\cys_demo\cys_demo\ObjectDetection\app\src\main\AndroidManifest.xml:39:13-49
+52        </activity>
+53
+54        <provider
+54-->[androidx.camera:camera-camera2:1.0.0-alpha05] C:\Users\이서영\.gradle\caches\transforms-3\c4681e09b7a534882d2b003b228a3121\transformed\jetified-camera-camera2-1.0.0-alpha05\AndroidManifest.xml:25:9-30:43
+55            android:name="androidx.camera.camera2.impl.Camera2Initializer"
+55-->[androidx.camera:camera-camera2:1.0.0-alpha05] C:\Users\이서영\.gradle\caches\transforms-3\c4681e09b7a534882d2b003b228a3121\transformed\jetified-camera-camera2-1.0.0-alpha05\AndroidManifest.xml:26:13-75
+56            android:authorities="org.pytorch.demo.objectdetection.camerax-init"
+56-->[androidx.camera:camera-camera2:1.0.0-alpha05] C:\Users\이서영\.gradle\caches\transforms-3\c4681e09b7a534882d2b003b228a3121\transformed\jetified-camera-camera2-1.0.0-alpha05\AndroidManifest.xml:27:13-64
+57            android:exported="false"
+57-->[androidx.camera:camera-camera2:1.0.0-alpha05] C:\Users\이서영\.gradle\caches\transforms-3\c4681e09b7a534882d2b003b228a3121\transformed\jetified-camera-camera2-1.0.0-alpha05\AndroidManifest.xml:28:13-37
+58            android:initOrder="100"
+58-->[androidx.camera:camera-camera2:1.0.0-alpha05] C:\Users\이서영\.gradle\caches\transforms-3\c4681e09b7a534882d2b003b228a3121\transformed\jetified-camera-camera2-1.0.0-alpha05\AndroidManifest.xml:29:13-36
+59            android:multiprocess="true" />
+59-->[androidx.camera:camera-camera2:1.0.0-alpha05] C:\Users\이서영\.gradle\caches\transforms-3\c4681e09b7a534882d2b003b228a3121\transformed\jetified-camera-camera2-1.0.0-alpha05\AndroidManifest.xml:30:13-40
+60    </application>
+61
+62</manifest>
