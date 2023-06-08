@@ -134,7 +134,8 @@ public class MainActivity extends AppCompatActivity implements Runnable {
                     @Override
                     public void onClick(DialogInterface dialog, int item) {
                         if (options[item].equals("Take Picture")) {
-                            Intent takePicture = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+                            // Intent takePicture = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+                            Intent takePicture = new Intent(MainActivity.this, CameraActivity.class);
                             startActivityForResult(takePicture, 0);
                         }
                         else if (options[item].equals("Choose from Photos")) {
